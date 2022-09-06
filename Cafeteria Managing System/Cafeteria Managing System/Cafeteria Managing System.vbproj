@@ -1,0 +1,600 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{037AFBFC-7641-4A0C-ADCD-6389D49EBA0A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Cafeteria_Managing_System.My.MyApplication</StartupObject>
+    <RootNamespace>Cafeteria_Managing_System</RootNamespace>
+    <AssemblyName>Cafeteria Managing System</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Cafeteria Managing System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Cafeteria Managing System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="10N13Order.Designer.vb">
+      <DependentUpon>10N13Order.vb</DependentUpon>
+    </Compile>
+    <Compile Include="10N13Order.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="12Filter.Designer.vb">
+      <DependentUpon>12Filter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="12Filter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="14Pay.Designer.vb">
+      <DependentUpon>14Pay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="14Pay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="15TotalPay.Designer.vb">
+      <DependentUpon>15TotalPay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="15TotalPay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="16MessageBox.Designer.vb">
+      <DependentUpon>16MessageBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="16MessageBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="17Receipt.Designer.vb">
+      <DependentUpon>17Receipt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="17Receipt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="18AdminSettings.Designer.vb">
+      <DependentUpon>18AdminSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="18AdminSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="19UserSettings.Designer.vb">
+      <DependentUpon>19UserSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="19UserSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCatMes.Designer.vb">
+      <DependentUpon>AddCatMes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddCatMes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddClockOut.Designer.vb">
+      <DependentUpon>AddClockOut.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddClockOut.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDeleteUser.Designer.vb">
+      <DependentUpon>AddDeleteUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddDeleteUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewDeleteCategory.Designer.vb">
+      <DependentUpon>AddNewDeleteCategory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewDeleteCategory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddOrder.Designer.vb">
+      <DependentUpon>AddOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddReceiptID.Designer.vb">
+      <DependentUpon>AddReceiptID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddReceiptID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUserDeleteMessage.Designer.vb">
+      <DependentUpon>AddUserDeleteMessage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddUserDeleteMessage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUserSettings.Designer.vb">
+      <DependentUpon>AddUserSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddUserSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cafeteria_Management_SystemDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cafeteria_Management_SystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cafeteria_Management_SystemDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cafeteria_Management_SystemDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Connection\SQLServerConnection.vb" />
+    <Compile Include="Final_DataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Final_DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Login1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login1.Designer.vb">
+      <DependentUpon>Login1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="20MessageBox.Designer.vb">
+      <DependentUpon>20MessageBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="20MessageBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="21ModUser.Designer.vb">
+      <DependentUpon>21ModUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="21ModUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="22ChgUsername.Designer.vb">
+      <DependentUpon>22ChgUsername.vb</DependentUpon>
+    </Compile>
+    <Compile Include="22ChgUsername.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="23MessageBox.Designer.vb">
+      <DependentUpon>23MessageBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="23MessageBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="24MessageBox.Designer.vb">
+      <DependentUpon>24MessageBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="24MessageBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="25ChgPassword.Designer.vb">
+      <DependentUpon>25ChgPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="25ChgPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="26MessageBox.Designer.vb">
+      <DependentUpon>26MessageBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="26MessageBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="27MessageBox.Designer.vb">
+      <DependentUpon>27MessageBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="27MessageBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="28NewUserReg.Designer.vb">
+      <DependentUpon>28NewUserReg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="28NewUserReg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="29MessageBox.Designer.vb">
+      <DependentUpon>29MessageBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="29MessageBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBox2.Designer.vb">
+      <DependentUpon>MessageBox2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBox2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30MessageBox.Designer.vb">
+      <DependentUpon>30MessageBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30MessageBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="31MenuMod.Designer.vb">
+      <DependentUpon>31MenuMod.vb</DependentUpon>
+    </Compile>
+    <Compile Include="31MenuMod.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="32UpdateItem.Designer.vb">
+      <DependentUpon>32UpdateItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="32UpdateItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="33MessageBox.Designer.vb">
+      <DependentUpon>33MessageBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="33MessageBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="34AddNewItem.Designer.vb">
+      <DependentUpon>34AddNewItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="34AddNewItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="35MessageBox.Designer.vb">
+      <DependentUpon>35MessageBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="35MessageBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="36DeleteItem.Designer.vb">
+      <DependentUpon>36DeleteItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="36DeleteItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="37ConfirmationDelMsg.Designer.vb">
+      <DependentUpon>37ConfirmationDelMsg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="37ConfirmationDelMsg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="38MessageBox.Designer.vb">
+      <DependentUpon>38MessageBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="38MessageBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="39AddNewCategory.Designer.vb">
+      <DependentUpon>39AddNewCategory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="39AddNewCategory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tables3.Designer.vb">
+      <DependentUpon>Tables3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tables3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="40MessageBox.Designer.vb">
+      <DependentUpon>40MessageBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="40MessageBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="4Registration.Designer.vb">
+      <DependentUpon>4Registration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="4Registration.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="5Menu.Designer.vb">
+      <DependentUpon>5Menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="5Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="8Order Amount.Designer.vb">
+      <DependentUpon>8Order Amount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="8Order Amount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="9MessageBox.Designer.vb">
+      <DependentUpon>9MessageBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="9MessageBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add1CurrentStatus.Designer.vb">
+      <DependentUpon>Add1CurrentStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Add1CurrentStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add2ConfirmationChangeMsg.Designer.vb">
+      <DependentUpon>Add2ConfirmationChangeMsg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Add2ConfirmationChangeMsg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add3MessageBox.Designer.vb">
+      <DependentUpon>Add3MessageBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Add3MessageBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="_8OrderAmount%28Remake%29.Designer.vb">
+      <DependentUpon>_8OrderAmount%28Remake%29.vb</DependentUpon>
+    </Compile>
+    <Compile Include="_8OrderAmount%28Remake%29.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="10N13Order.resx">
+      <DependentUpon>10N13Order.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="12Filter.resx">
+      <DependentUpon>12Filter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="14Pay.resx">
+      <DependentUpon>14Pay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="15TotalPay.resx">
+      <DependentUpon>15TotalPay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="16MessageBox.resx">
+      <DependentUpon>16MessageBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="17Receipt.resx">
+      <DependentUpon>17Receipt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="18AdminSettings.resx">
+      <DependentUpon>18AdminSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="19UserSettings.resx">
+      <DependentUpon>19UserSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCatMes.resx">
+      <DependentUpon>AddCatMes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddClockOut.resx">
+      <DependentUpon>AddClockOut.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddDeleteUser.resx">
+      <DependentUpon>AddDeleteUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewDeleteCategory.resx">
+      <DependentUpon>AddNewDeleteCategory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddOrder.resx">
+      <DependentUpon>AddOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddReceiptID.resx">
+      <DependentUpon>AddReceiptID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUserDeleteMessage.resx">
+      <DependentUpon>AddUserDeleteMessage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUserSettings.resx">
+      <DependentUpon>AddUserSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login1.resx">
+      <DependentUpon>Login1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="20MessageBox.resx">
+      <DependentUpon>20MessageBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="21ModUser.resx">
+      <DependentUpon>21ModUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="22ChgUsername.resx">
+      <DependentUpon>22ChgUsername.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="23MessageBox.resx">
+      <DependentUpon>23MessageBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="24MessageBox.resx">
+      <DependentUpon>24MessageBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="25ChgPassword.resx">
+      <DependentUpon>25ChgPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="26MessageBox.resx">
+      <DependentUpon>26MessageBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="27MessageBox.resx">
+      <DependentUpon>27MessageBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="28NewUserReg.resx">
+      <DependentUpon>28NewUserReg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="29MessageBox.resx">
+      <DependentUpon>29MessageBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBox2.resx">
+      <DependentUpon>MessageBox2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30MessageBox.resx">
+      <DependentUpon>30MessageBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="31MenuMod.resx">
+      <DependentUpon>31MenuMod.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="32UpdateItem.resx">
+      <DependentUpon>32UpdateItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="33MessageBox.resx">
+      <DependentUpon>33MessageBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="34AddNewItem.resx">
+      <DependentUpon>34AddNewItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="35MessageBox.resx">
+      <DependentUpon>35MessageBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="36DeleteItem.resx">
+      <DependentUpon>36DeleteItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="37ConfirmationDelMsg.resx">
+      <DependentUpon>37ConfirmationDelMsg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="38MessageBox.resx">
+      <DependentUpon>38MessageBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="39AddNewCategory.resx">
+      <DependentUpon>39AddNewCategory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tables3.resx">
+      <DependentUpon>Tables3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="40MessageBox.resx">
+      <DependentUpon>40MessageBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="4Registration.resx">
+      <DependentUpon>4Registration.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="5Menu.resx">
+      <DependentUpon>5Menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="8Order Amount.resx">
+      <DependentUpon>8Order Amount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="9MessageBox.resx">
+      <DependentUpon>9MessageBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add1CurrentStatus.resx">
+      <DependentUpon>Add1CurrentStatus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add2ConfirmationChangeMsg.resx">
+      <DependentUpon>Add2ConfirmationChangeMsg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add3MessageBox.resx">
+      <DependentUpon>Add3MessageBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_8OrderAmount%28Remake%29.resx">
+      <DependentUpon>_8OrderAmount%28Remake%29.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Cafeteria_Management_SystemDataSet.xsc">
+      <DependentUpon>Cafeteria_Management_SystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Cafeteria_Management_SystemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Cafeteria_Management_SystemDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Cafeteria_Management_SystemDataSet.xss">
+      <DependentUpon>Cafeteria_Management_SystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Cafeteria_Management_SystemDataSet1.xsc">
+      <DependentUpon>Cafeteria_Management_SystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Cafeteria_Management_SystemDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Cafeteria_Management_SystemDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Cafeteria_Management_SystemDataSet1.xss">
+      <DependentUpon>Cafeteria_Management_SystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Final_DataSet.xsc">
+      <DependentUpon>Final_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Final_DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Final_DataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Final_DataSet.xss">
+      <DependentUpon>Final_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
